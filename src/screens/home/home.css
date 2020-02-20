@@ -1,0 +1,66 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: Lato, sans-serif;
+    line-height: 1.4;
+    color: #3d3d3d;
+    min-height: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    padding: 2rem;
+    background-color: #efefef;
+}
+  table {
+    max-width: 50rem;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+th {
+    text-align: left;
+}
+th, td {
+    border: 1px solid #dfdfdf;
+    padding: 1rem;
+}
+@media screen and (max-width: 600px) {
+    .responsive-table {
+      border: 0;
+    }
+    .responsive-table thead {
+      display: none;
+    }
+    .responsive-table tbody {
+      background-color: #efefef;
+    }
+    .responsive-table th,
+    .responsive-table td {
+      padding: 0.5rem;
+      background-color: #fff;
+    }
+    .responsive-table tr {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      margin-bottom: 2rem;
+    }
+    .responsive-table tr:last-of-type {
+      margin-bottom: initial;
+    }
+    .responsive-table td {
+      display: block;
+      border-bottom: none;
+      text-align: right;
+    }
+    .responsive-table td:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+    }
+}
+  
